@@ -1,7 +1,7 @@
-#index > span {
+div.index > span {
   display: block;
 }
-#index > span:before {
+div.index > span:before {
   content: "➤";
   color: blue;
   padding-right: 1rem;

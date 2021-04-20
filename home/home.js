@@ -5,7 +5,8 @@ var toggleul = {
     }
 }
 document.addEventListener("DOMContentLoaded", function () {
-    for (let elem of document.querySelectorAll("#index>span")) {
+    for (let elem of document.querySelectorAll("div.index>span")) {
+        elem.nextElementSibling.hidden = true;
         elem.addEventListener("click", toggleul);
     }
 });
