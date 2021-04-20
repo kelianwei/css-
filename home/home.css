@@ -1,0 +1,8 @@
+#index > span {
+  display: block;
+}
+#index > span:before {
+  content: "➤";
+  color: blue;
+  padding-right: 1rem;
+}
