@@ -2,9 +2,29 @@ div.index {
   & > span {
     display: block;
     &:before {
+      display: inline-block;
+      width: 2rem;
       content: "➤";
       color: blue;
       padding-right: 1rem;
     }
   }
+  ul {
+    counter-reset: listCounter;
+  }
+  li {
+    counter-increment: listCounter;
+  }
+  li::before {
+    display: inline-block;
+    width: 3rem;
+    content: " *" counter(listCounter) "* ";
+    padding-left: 0.5rem;
+  }
+}
+
+.count {
+  padding: 0 3rem;
+  color: #001eff91;
+  font-size: small;
 }
